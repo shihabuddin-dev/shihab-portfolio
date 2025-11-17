@@ -59,7 +59,7 @@ const About: React.FC = () => {
           style={{ perspective: '1000px' }}
         >
           <div 
-            className="relative rounded-3xl overflow-hidden border border-white/10 bg-neutral-900/80 backdrop-blur p-2 shadow-2xl shadow-black/60 h-full"
+            className="relative rounded-3xl overflow-hidden border border-white/10 bg-transparent backdrop-blur p-2 shadow-2xl shadow-black/60 h-full"
             style={cardStyle}
           >
             <div className="absolute inset-0 pointer-events-none" style={{ ...glowStyle, transition: 'opacity 0.5s ease' }}></div>
@@ -67,7 +67,7 @@ const About: React.FC = () => {
               <Image
                 src={shihab_Image}
                 alt="Shihab Uddin portrait"
-                className="object rounded-2xl"
+                className="background-blur-2xl rounded-2xl border border-fuchsia-500/10"
                 width={800}
                 height={600}
                 sizes="(max-width: 1024px) 100vw, 40vw"

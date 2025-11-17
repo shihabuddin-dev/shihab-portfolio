@@ -4,6 +4,7 @@ import Experience from "@/components/home/Experience";
 import Hero from "@/components/home/Hero";
 import Projects from "@/components/home/Projects";
 import Skills from "@/components/home/Skills";
+import Testimonials from "@/components/home/Testimonials";
 import WebsiteBg from "@/components/shared/WebsiteBg";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ScrollProgressBar from "@/components/ui/ScrollProgressBar";
@@ -23,10 +24,11 @@ export default function HomePage() {
         <main id="top" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
 
           <Hero />
-          <About/>
+          <About />
           <Projects />
           <Skills />
           <Experience />
+          <Testimonials />
           <Contact />
         </main>
       </div>
