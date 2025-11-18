@@ -9,7 +9,6 @@ import WebsiteBg from "@/components/shared/WebsiteBg";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ScrollProgressBar from "@/components/ui/ScrollProgressBar";
 
-
 export default function HomePage() {
   return (
     <>
@@ -21,8 +20,10 @@ export default function HomePage() {
       {/* Main Layout */}
       <div className="relative z-10">
         <WebsiteBg />
-        <main id="top" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
-
+        <main
+          id="top"
+          className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24"
+        >
           <Hero />
           <About />
           <Projects />

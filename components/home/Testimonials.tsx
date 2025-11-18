@@ -153,9 +153,8 @@ const Testimonials: React.FC = () => {
             <SectionHeader 
                 title="Feedback"
                 subtitle="Testimonials"
-                color="rose"
             />
-            <p className="text-base text-neutral-400 mt-[-2rem] mb-6">Imagine what your clients or teammates would say after working with you.</p>
+            <p className="text-base text-neutral-400 -mt-8 mb-6">Imagine what your clients or teammates would say after working with you.</p>
 
             <div className="sm:px-0 lg:px-0 max-w-7xl mr-auto ml-auto">
               

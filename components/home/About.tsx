@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import SectionHeader from '../shared/SectionHeader';
 import { Gem, ServerCog, FileCode2 } from 'lucide-react';
-import { shihab_Image } from '@/utils/IMAGES';
+import { shihab_dev_Image_about } from '@/utils/IMAGES';
 
 
 const About: React.FC = () => {
@@ -45,7 +45,6 @@ const About: React.FC = () => {
       <SectionHeader
         title="Introduction"
         subtitle="About Me"
-        color="fuchsia"
       />
 
       {/* Top Grid: Portrait + Intro */}
@@ -65,7 +64,7 @@ const About: React.FC = () => {
             <div className="absolute inset-0 pointer-events-none" style={{ ...glowStyle, transition: 'opacity 0.5s ease' }}></div>
             <div className="relative w-full h-full">
               <Image
-                src={shihab_Image}
+                src={shihab_dev_Image_about}
                 alt="Shihab Uddin portrait"
                 className="background-blur-2xl rounded-2xl border border-fuchsia-500/10"
                 width={800}

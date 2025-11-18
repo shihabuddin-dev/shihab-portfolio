@@ -1,39 +1,15 @@
 import React from 'react';
 import SectionHeader from '../shared/SectionHeader';
-const experienceData = [
-  {
-    role: 'Front‑End Web Developer',
-    company: 'Self‑taught · Remote',
-    period: '2022 – Present',
-    description: 'Learning front‑end development by building projects with React, Next.js, and Tailwind CSS, focusing on reusable components, routing, and responsive layouts.',
-    points: [
-      'Built multiple small and medium‑sized projects to practice real‑world use cases.',
-      'Improved understanding of JavaScript, React hooks, state management, and API calls.'
-    ],
-    color: 'indigo'
-  },
-  {
-    role: 'Practice & Learning',
-    company: 'Online Courses & Tutorials',
-    period: 'Ongoing',
-    description: 'Following documentation, courses, and tutorials to strengthen fundamentals of web development and improve problem‑solving skills.',
-    points: [
-      'Practicing with coding challenges and small UI components.',
-      'Exploring best practices for code structure, reusability, and performance.'
-    ],
-    color: 'sky'
-  }
-];
+import { experienceData } from '@/Data/experienceData';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="scroll-mt-24 border-y border-white/10 bg-black/60 py-12">
+    <section id="experience" className="scroll-mt-24 border-y border-white/10  py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeader
                 title="Experience"
                 subtitle="Background"
-                color="indigo"
             />
         </div>
         <p className="mt-[-2rem] max-w-xl text-sm text-slate-200">
