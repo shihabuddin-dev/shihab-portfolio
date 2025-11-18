@@ -139,7 +139,8 @@ const Projects: React.FC = () => {
                       <div className="flex items-center gap-4 pt-2 text-sm text-neutral-300">
                         <a
                           href={project.live}
-                          className={`inline-flex items-center gap-1.5 hover:${activeColor.text} transition-colors`}
+                          target="_blank"
+                          className={`inline-flex items-center gap-1.5 hover:text-fuchsia-400 hover:skew-1 transition-colors`}
                         >
                           <ExternalLink className="h-4 w-4" /> Live Demo
                         </a>
@@ -148,7 +149,7 @@ const Projects: React.FC = () => {
                           href={project.source}
                           target="_blank"
                           rel="noreferrer"
-                          className={`inline-flex items-center gap-1.5 hover:${activeColor.text} transition-colors`}
+                          className={`inline-flex items-center gap-1.5 hover:text-fuchsia-400 hover:skew-1 transition-colors`}
                         >
                           <Github className="h-4 w-4" /> Source Code
                         </a>

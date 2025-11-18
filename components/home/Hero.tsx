@@ -1,7 +1,6 @@
 "use client";
 import { Code, Sparkles } from "lucide-react";
 import React from "react";
-import "./hero.css";
 import Image from "next/image";
 import { shihab_dev_Image_hero } from "@/utils/IMAGES";
 

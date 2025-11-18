@@ -4,16 +4,16 @@ import { experienceData } from '@/Data/experienceData';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="scroll-mt-24 border-y border-white/10  py-12">
+    <section id="experience" className="scroll-mt-24 border-y border-white/10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <SectionHeader
-                title="Experience"
-                subtitle="Background"
-            />
+          <SectionHeader
+            title="Experience"
+            subtitle="Background"
+          />
         </div>
-        <p className="mt-[-2rem] max-w-xl text-sm text-slate-200">
-            Learning, building, and practicing by working on real‑world inspired projects and challenges.
+        <p className="text-base text-neutral-400 -mt-8 mb-6">
+          Learning, building, and practicing by working on real‑world inspired projects and challenges.
         </p>
 
         {/* Timeline */}
