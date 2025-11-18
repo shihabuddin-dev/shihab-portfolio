@@ -78,7 +78,6 @@ export default function RootLayout({
           name="description"
           content="A personal portfolio website for Shihab Uddin, a MERN and Full Stack Developer, showcasing projects, skills, and experience."
         />
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
