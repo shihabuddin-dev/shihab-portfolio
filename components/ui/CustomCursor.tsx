@@ -70,7 +70,7 @@ const CustomCursor: React.FC = () => {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[9999] hidden md:block">
+    <output className="pointer-events-none fixed inset-0 z-100 hidden md:block" aria-label="Custom cursor">
       <div
         className="absolute rounded-full bg-fuchsia-400"
         style={{
@@ -93,7 +93,7 @@ const CustomCursor: React.FC = () => {
           transition: "width 0.3s, height 0.3s, background-color 0.3s",
         }}
       />
-    </div>
+    </output>
   );
 };
 

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   AnimatePresence,
   MotionValue,
@@ -7,7 +7,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { CircleX, Grip, X } from "lucide-react";
+import { Grip } from "lucide-react";
 import { useRef, useState } from "react";
 
 // Simple className utility without shadCN
@@ -15,7 +15,7 @@ function cn(...classes: (string | undefined | false)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const FloatingDockClient = ({
+const FloatingDockClient = ({
   items,
   desktopClassName,
   mobileClassName,
@@ -41,7 +41,9 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("fixed bottom-4 right-4 z-50 block md:hidden", className)}>
+    <div
+      className={cn("fixed bottom-4 right-4 z-50 block md:hidden", className)}
+    >
       <AnimatePresence>
         {open && (
           <motion.div
@@ -68,6 +70,7 @@ const FloatingDockMobile = ({
                 <a
                   href={item.href}
                   key={item.title}
+                  aria-label={`${item.title}`}
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
@@ -79,9 +82,14 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
+        aria-label={open ? "Close navigation menu" : "Open navigation menu"}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
       >
-      {open? <Grip className="h-5 w-5 text-fuchsia-400 rotate-45" />: <Grip className="h-5 w-5 text-fuchsia-400" />}
+        {open ? (
+          <Grip className="h-5 w-5 text-fuchsia-400 rotate-45" />
+        ) : (
+          <Grip className="h-5 w-5 text-fuchsia-400" />
+        )}
       </button>
     </div>
   );
@@ -101,7 +109,7 @@ const FloatingDockDesktop = ({
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         "mx-auto hidden h-16 items-end gap-4 rounded-xl bg-gray-900/90 backdrop-blur-md px-4 pb-3 md:flex border border-gray-800/60 shadow-xl",
-        className,
+        className
       )}
     >
       {items.map((item) => (
@@ -136,7 +144,7 @@ function IconContainer({
   let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
-    [20, 40, 20],
+    [20, 40, 20]
   );
 
   let width = useSpring(widthTransform, {
@@ -164,7 +172,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a href={href} aria-label={`${title}`}>
       <motion.div
         ref={ref}
         style={{ width, height }}
@@ -194,3 +202,5 @@ function IconContainer({
     </a>
   );
 }
+
+export default FloatingDockClient;

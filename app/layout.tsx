@@ -15,13 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shihab-dev.web.app"),
   title: "Shihab Uddin - Full Stack Developer Portfolio",
   description:
     "A personal portfolio website for Shihab Uddin, a MERN and Full Stack Developer, showcasing projects, skills, and experience.",
   keywords: [
     "Shihab Uddin",
     "Full Stack Developer",
-    "MERN",
+    "MERN Stack Developer",
     "React",
     "Next.js",
     "Node.js",
@@ -34,10 +35,6 @@ export const metadata: Metadata = {
     "UI/UX",
   ],
   authors: [{ name: "Shihab Uddin" }],
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -59,10 +56,6 @@ export const metadata: Metadata = {
     description:
       "A personal portfolio website for Shihab Uddin, a MERN and Full Stack Developer, showcasing projects, skills, and experience.",
     images: ["/favicon.ico"],
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 

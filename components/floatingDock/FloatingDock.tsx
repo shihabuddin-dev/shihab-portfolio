@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { FloatingDockClient } from "./FloatingDockClient";
 import {
   BriefcaseBusiness,
   FolderCode,
@@ -9,8 +8,9 @@ import {
   Send,
   SquareUser,
 } from "lucide-react";
+import FloatingDockClient from "./FloatingDockClient";
 
-export default function FloatingDockWithScroll() {
+const FloatingDock: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -33,47 +33,38 @@ export default function FloatingDockWithScroll() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const linkIconClass =
+    "h-full w-full text-muted-foreground hover:text-primary transition-colors";
+
   const links = [
     {
       title: "Home",
-      icon: (
-        <Home className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <Home className={linkIconClass} />,
       href: "#",
     },
     {
       title: "About Me",
-      icon: (
-        <SquareUser className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <SquareUser className={linkIconClass} />,
       href: "#about",
     },
     {
       title: "Projects",
-      icon: (
-        <FolderOpenDot className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <FolderOpenDot className={linkIconClass} />,
       href: "#projects",
     },
     {
       title: "Skills",
-      icon: (
-        <FolderCode className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <FolderCode className={linkIconClass} />,
       href: "#skills",
     },
     {
       title: "Experience",
-      icon: (
-        <BriefcaseBusiness className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <BriefcaseBusiness className={linkIconClass} />,
       href: "#experience",
     },
     {
       title: "Contact Me",
-      icon: (
-        <Send className="h-full w-full text-muted-foreground hover:text-primary transition-colors" />
-      ),
+      icon: <Send className={linkIconClass} />,
       href: "#contact",
     },
   ];
@@ -87,4 +78,5 @@ export default function FloatingDockWithScroll() {
       <FloatingDockClient items={links} />
     </div>
   );
-}
+};
+export default FloatingDock;
