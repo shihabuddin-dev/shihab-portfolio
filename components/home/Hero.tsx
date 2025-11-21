@@ -25,13 +25,13 @@ const Hero: React.FC = () => {
 
         {/* Title */}
         <div className="space-y-3">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight space-grotesk">
-            I’m{" "}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight space-grotesk text-white/90">
+            I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-sky-400 to-violet-400">
               Shihab Uddin
             </span>
             ,
-            <span className="block mt-1">
+            <span className="block mt-1 text-white/90">
               a MERN &amp; full stack developer
             </span>
           </h1>
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             <span className="text-fuchsia-300 font-medium">
               MongoDB, Express, React, and Node.js
             </span>
-            — from pixel‑perfect UI to scalable APIs.
+            - from pixel‑perfect UI to scalable APIs.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
           {/* Shiny CTA */}
           <ShinyLink href="#contact">
             <span>
-              <span>Let's build your next app</span>
+              <span>Let&apos;s build your next app</span>
               <Code name="ArrowRight" className="h-4 w-4 text-sky-200" />
             </span>
           </ShinyLink>
@@ -63,16 +63,16 @@ const Hero: React.FC = () => {
           <span className="text-xs font-medium text-neutral-400">
             Core stack:
           </span>
+          <span className="rounded-full border border-amber-400/40 bg-amber-400/10 text-amber-200 text-xs px-3 py-1">
+            JavaScript
+          </span>
           <span className="rounded-full border border-emerald-400/40 bg-emerald-400/10 text-emerald-200 text-xs px-3 py-1">
-            MongoDB
+            React
           </span>
           <span className="rounded-full border border-sky-400/40 bg-sky-400/10 text-sky-200 text-xs px-3 py-1">
-            Express.js
+            Next
           </span>
           <span className="rounded-full border border-indigo-400/40 bg-indigo-400/10 text-indigo-200 text-xs px-3 py-1">
-            React.js
-          </span>
-          <span className="rounded-full border border-amber-400/40 bg-amber-400/10 text-amber-200 text-xs px-3 py-1">
             Node.js
           </span>
         </div>
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
               <div>
                 <p className="text-sm text-neutral-400">Full Stack Developer</p>
                 <p
-                  className="text-lg font-semibold tracking-tight"
+                  className="text-lg font-semibold tracking-tight text-white/80"
                   style={{ fontFamily: "'Space Grotesk', system-ui" }}
                 >
                   Shihab Uddin
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-3 shadow-sm">
+              <div className="relative rounded-2xl border border-white/10 bg-linear-to-br from-slate-950 via-slate-950 to-slate-900 p-3 shadow-sm">
                 <div className="pointer-events-none absolute inset-px rounded-2xl bg-[radial-gradient(circle_at_top,rgba(129,140,248,0.1),transparent_60%)]"></div>
                 <div className="relative flex items-center justify-between">
                   <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
@@ -140,7 +140,7 @@ const Hero: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 p-3 shadow-sm">
+              <div className="relative rounded-2xl border border-white/10 bg-linear-to-br from-slate-950 via-slate-950 to-slate-900 p-3 shadow-sm">
                 <div className="pointer-events-none absolute inset-px rounded-2xl bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.1),transparent_60%)]"></div>
                 <div className="relative flex items-center justify-between">
                   <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
@@ -181,33 +181,13 @@ const Hero: React.FC = () => {
               </div>
               <pre className="overflow-x-auto leading-relaxed">
                 <code>
-                  <span className="text-slate-500">// Portfolio entry</span>
-                  {`
-`}
-                  <span className="text-indigo-200">export</span>{" "}
-                  <span className="text-indigo-200">const</span> shihab = {"{"}
-                  {`
-`}{" "}
-                  name: <span className="text-emerald-300">'Shihab'</span>,
-                  {`
-`}{" "}
-                  role:{" "}
-                  <span className="text-emerald-300">
-                    'Full Stack Developer'
-                  </span>
-                  ,
-                  {`
-`}{" "}
-                  stack: [<span className="text-emerald-300">'React'</span>,{" "}
-                  <span className="text-emerald-300">'Next.js'</span>,{" "}
-                  <span className="text-emerald-300">'MongoDB'</span>],
-                  {`
-`}{" "}
-                  basedIn:{" "}
-                  <span className="text-emerald-300">'Bangladesh'</span>,
-                  {`
-`}
-                  {"}"}
+                  {`// Portfolio entry
+export const shihab = {
+  name: 'Shihab',
+  role: 'Full Stack Developer',
+  stack: ['React', 'Next.js', 'MongoDB'],
+  basedIn: 'Bangladesh'
+}`}
                 </code>
               </pre>
             </div>

@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     <footer className="border-t border-white/10 bg-black/80 text-neutral-300 backdrop-blur mt-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: Thanks */}
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center gap-4 text-sm md:text-base">
           {thanks.map((item, i) => (
             <span
               key={i}
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Middle: Copyright & Made With */}
-        <div className="flex flex-col items-center gap-1 text-xs text-center">
+        <div className="flex flex-col items-center gap-1 text-sm text-center">
           <p>© {currentYear} Shihab Uddin. All rights reserved.</p>
           <p className="inline-flex items-center gap-1">
             Made with{" "}
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Right: GitHub Actions & Back to Top */}
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center gap-4 text-sm md:text-base">
           <a
             href="https://github.com/shihabuddin-dev/shihab-portfolio"
             target="_blank"

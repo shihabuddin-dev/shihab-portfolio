@@ -71,7 +71,7 @@ const FloatingDockMobile = ({
                   href={item.href}
                   key={item.title}
                   aria-label={`${item.title}`}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 shadow-lg border border-gray-700 text-white"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </a>
@@ -83,7 +83,7 @@ const FloatingDockMobile = ({
       <button
         onClick={() => setOpen(!open)}
         aria-label={open ? "Close navigation menu" : "Open navigation menu"}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 shadow-lg border border-gray-700 hover:bg-gray-700 transition-colors"
       >
         {open ? (
           <Grip className="h-5 w-5 text-fuchsia-400 rotate-45" />
@@ -194,7 +194,7 @@ function IconContainer({
         </AnimatePresence>
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
-          className="flex items-center justify-center"
+          className="flex items-center justify-center text-white"
         >
           {icon}
         </motion.div>
