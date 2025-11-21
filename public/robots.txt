@@ -1,0 +1,10 @@
+# Global rules
+User-agent: *
+Disallow: /downloads/
+
+# Specific bot block
+User-agent: magicsearchbot
+Disallow: /uploads/
+
+# Sitemap
+Sitemap: https://shihab-dev.web.app/sitemap-file.xml
