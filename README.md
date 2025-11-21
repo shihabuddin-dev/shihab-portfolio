@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Shihab Uddin — Portfolio
 
-First, run the development server:
+Professional portfolio showcasing projects, skills, and product-ready web apps.
+
+- Live site: https://shihab-dev.web.app/
+- LinkedIn: https://www.linkedin.com/in/shihab-dev
+
+## Overview
+
+This repository contains the source code for a personal portfolio built with the Next.js App Router. The site demonstrates modern frontend practices, accessibility-aware UI, component-driven architecture, and deployment-ready configuration.
+
+## Highlights
+
+- Responsive, accessible UI using Tailwind CSS
+- Hybrid client & server components via Next.js App Router
+- Optimized images with `next/image` and centralized imports
+- SVG icons with `lucide-react`
+- Contact form and project showcase with source links
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- lucide-react
+- framer-motion (optional)
+- Firebase / Vercel for deployment
+
+## Quick Start (local)
+
+Using pnpm (recommended):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to preview the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build and run production locally:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm build
+pnpm start
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+You can deploy this app to Vercel or Firebase Hosting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Vercel: Connect the repository and use the default Next.js settings.
+- Firebase: Build the app first and set `firebase.json` `public` field to your output directory before `firebase deploy`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Repository Structure
 
-## Deploy on Vercel
+- `app/` — Next.js App Router pages and layouts
+- `components/` — Reusable UI components
+- `utils/IMAGES.ts` — Central image imports for `next/image`
+- `public/` — Static assets (robots, images)
+- `package.json`, `tsconfig.json`, `next.config.mjs`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions, improvements, and bug reports are welcome. For larger changes, open an issue first to discuss the approach. For small edits, submit a PR.
+
+## Contact
+
+Connect on LinkedIn: https://www.linkedin.com/in/shihab-dev
+
+Visit the live site: https://shihab-dev.web.app/
+
+If you're interested in working together, message me on LinkedIn or use the contact form on the site.
+
+---
+
+_Maintained by Shihab Uddin_
